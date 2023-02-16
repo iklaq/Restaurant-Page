@@ -8,20 +8,8 @@ const menuInfo = {
   paraText3: "3. Pasta",
 };
 
-function addImageElement(contentDiv, srcLink) {
-  const menuImage = document.createElement("img");
-  menuImage.classList.add("menu-img");
-  menuImage.src = srcLink;
-  menuImage.alt = "Image of Menu";
-  contentDiv.appendChild(menuImage);
-}
-
-function addParaElement(contentDiv, paraText) {
-  const para = document.createElement("p");
-  para.classList.add("intro");
-  para.textContent = paraText;
-  contentDiv.appendChild(para);
-}
+import { addImageElement } from "./utility";
+import { addParaElement } from "./utility";
 
 export function loadMenuPage() {
   const contentDiv = document.querySelector("#content");
@@ -32,7 +20,7 @@ export function loadMenuPage() {
   contentDiv.appendChild(heading);
   addImageElement(contentDiv, menuInfo.srcLink1);
   addParaElement(contentDiv, menuInfo.paraText1);
-  addImageElement(contentDiv,menuInfo.srcLink2);
+  addImageElement(contentDiv, menuInfo.srcLink2);
   addParaElement(contentDiv, menuInfo.paraText2);
   addImageElement(contentDiv, menuInfo.srcLink3);
   addParaElement(contentDiv, menuInfo.paraText3);

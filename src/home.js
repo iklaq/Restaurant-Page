@@ -4,12 +4,7 @@ const homeInfo = {
     paraText3: "The atmosphere is relaxed and friendly. If music is played, it’s appropriate and the volume not so loud that customers cannot talk. Staff is trained to avoid distracting behaviour and making unnecessary noise.",
 };
 
-function addParaElement(contentDiv, paraText) {
-    const para1 = document.createElement("p");
-    para1.classList.add("intro");
-    para1.textContent = paraText;
-    contentDiv.appendChild(para1);
-}
+import {addParaElement} from "./utility";
 
 export function loadInitialPage() {
     const contentDiv = document.querySelector("#content");

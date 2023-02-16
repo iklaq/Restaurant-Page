@@ -8,20 +8,8 @@ const contentInfo = {
   paraText3: "3. Phone ( +916307329321 )",
 };
 
-function addImageElement(contentDiv, srcLink) {
-  const contactImage = document.createElement("img");
-  contactImage.classList.add("menu-img");
-  contactImage.src = srcLink;
-  contactImage.alt = "Image of Menu";
-  contentDiv.appendChild(contactImage);
-}
-
-function addParaElement(contentDiv, paraText) {
-  const para = document.createElement("p");
-  para.classList.add("intro");
-  para.textContent = paraText;
-  contentDiv.appendChild(para);
-}
+import { addImageElement } from "./utility";
+import { addParaElement } from "./utility";
 
 export function loadContactPage() {
   const contentDiv = document.querySelector("#content");
