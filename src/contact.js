@@ -1,3 +1,5 @@
+import { addParaElement, addImageElement } from "./utils";
+
 const contentInfo = {
   srcLink1: "../src/assests/contact-img.jpg",
   srcLink2: "../src/assests/map-img.jpg",
@@ -7,15 +9,17 @@ const contentInfo = {
   paraText2: "2. Email ( ahmadiklaq3@gmail.com)",
   paraText3: "3. Phone ( +916307329321 )",
 };
-import { addImageElement } from "./utility";
-import { addParaElement } from "./utility";
+
 export function loadContactPage() {
   const contentDiv = document.querySelector("#content");
+
   contentDiv.replaceChildren();
+
   const heading = document.createElement("h1");
   heading.textContent = "Contact :)";
   heading.classList.add("landing-title");
   contentDiv.appendChild(heading);
+
   addImageElement(contentDiv, contentInfo.srcLink1);
   addParaElement(contentDiv, contentInfo.paraText1);
   addImageElement(contentDiv, contentInfo.srcLink2);
@@ -24,4 +28,3 @@ export function loadContactPage() {
   addParaElement(contentDiv, contentInfo.paraText3);
   addImageElement(contentDiv, contentInfo.srcLink4);
 }
-

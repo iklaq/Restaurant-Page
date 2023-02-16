@@ -1,3 +1,5 @@
+import { addParaElement, addImageElement } from "./utils";
+
 const menuInfo = {
   srcLink1: "../src/assests/menu-img.jpg",
   srcLink2: "../src/assests/pizza-img.jpg",
@@ -7,15 +9,17 @@ const menuInfo = {
   paraText2: "2. Burger",
   paraText3: "3. Pasta",
 };
-import { addImageElement } from "./utility";
-import { addParaElement } from "./utility";
+
 export function loadMenuPage() {
   const contentDiv = document.querySelector("#content");
+
   contentDiv.replaceChildren();
+
   const heading = document.createElement("h1");
   heading.textContent = "Menu :)";
   heading.classList.add("landing-title");
   contentDiv.appendChild(heading);
+
   addImageElement(contentDiv, menuInfo.srcLink1);
   addParaElement(contentDiv, menuInfo.paraText1);
   addImageElement(contentDiv, menuInfo.srcLink2);
