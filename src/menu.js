@@ -12,7 +12,6 @@ const menuInfo = {
 
 export function loadMenuPage() {
   const contentDiv = document.querySelector("#content");
-
   contentDiv.replaceChildren();
 
   const heading = document.createElement("h1");

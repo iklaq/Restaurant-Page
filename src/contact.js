@@ -12,7 +12,6 @@ const contentInfo = {
 
 export function loadContactPage() {
   const contentDiv = document.querySelector("#content");
-
   contentDiv.replaceChildren();
 
   const heading = document.createElement("h1");
