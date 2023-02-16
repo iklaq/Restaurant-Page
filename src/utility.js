@@ -5,7 +5,6 @@ export function addImageElement(contentDiv, srcLink) {
   menuImage.alt = "Image of Menu";
   contentDiv.appendChild(menuImage);
 }
-
 export function addParaElement(contentDiv, paraText) {
   const para = document.createElement("p");
   para.classList.add("intro");

@@ -7,10 +7,8 @@ const contentInfo = {
   paraText2: "2. Email ( ahmadiklaq3@gmail.com)",
   paraText3: "3. Phone ( +916307329321 )",
 };
-
 import { addImageElement } from "./utility";
 import { addParaElement } from "./utility";
-
 export function loadContactPage() {
   const contentDiv = document.querySelector("#content");
   contentDiv.replaceChildren();
@@ -26,3 +24,4 @@ export function loadContactPage() {
   addParaElement(contentDiv, contentInfo.paraText3);
   addImageElement(contentDiv, contentInfo.srcLink4);
 }
+

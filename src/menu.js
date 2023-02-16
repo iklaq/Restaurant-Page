@@ -7,10 +7,8 @@ const menuInfo = {
   paraText2: "2. Burger",
   paraText3: "3. Pasta",
 };
-
 import { addImageElement } from "./utility";
 import { addParaElement } from "./utility";
-
 export function loadMenuPage() {
   const contentDiv = document.querySelector("#content");
   contentDiv.replaceChildren();
@@ -26,3 +24,4 @@ export function loadMenuPage() {
   addParaElement(contentDiv, menuInfo.paraText3);
   addImageElement(contentDiv, menuInfo.srcLink4);
 }
+
