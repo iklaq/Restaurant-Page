@@ -3,7 +3,7 @@ const homeInfo = {
     paraText2: "Waitrons know their jobs, are efficient and able to advise customers on the best choices. Food is served with minimal delay, and after the meal patrons don’t have to struggle to get their bill.",
     paraText3: "The atmosphere is relaxed and friendly. If music is played, it’s appropriate and the volume not so loud that customers cannot talk. Staff is trained to avoid distracting behaviour and making unnecessary noise.",
 };
-import {addParaElement} from "./utility";
+import { addParaElement } from "./utility";
 export function loadInitialPage() {
     const contentDiv = document.querySelector("#content");
     contentDiv.replaceChildren();
